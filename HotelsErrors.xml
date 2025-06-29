@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!-- ERROR 1: The root element name is Hotel, instead of Hotels. -->
 <Hotel>
   
-  
-  <Hotel>
+  <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>800-937-8461</Phone>
     <Phone>480-968-8885</Phone>
-    <Address NearestAirport="Sky Harbor">
+    <!-- ERROR 2: The required attribute 'NearestAirport' is missing. -->
+    <Address>
       <Number>11</Number>
       <Street>E. 7th St</Street>
       <City>Tempe</City>
@@ -17,9 +17,7 @@
   </Hotel>
   
   <Hotel Rating="4.5">
-    <!-- ERROR 5: Two Name elements are provided for one of the hotels. -->
     <Name>Hyatt Regency Phoenix</Name>
-    <Name>Duplicate Name Error</Name>
     <!-- ERROR 3: A Phone element is missing on one of the hotels. -->
     <!-- ERROR 4: An Address element has no closing tag. -->
     <Address NearestAirport="PHX">
@@ -31,4 +29,18 @@
     <!-- </Address> -->
   </Hotel>
 
+  <Hotel> <!-- Rating is optional, so omitting it is not an error -->
+    <!-- ERROR 5: Two Name elements are provided for one of the hotels. -->
+    <Name>Four Points by Sheraton</Name>
+    <Name>Duplicate Name Error</Name>
+    <Phone>(480) 968-3451</Phone>
+    <Address NearestAirport="PHX">
+      <Number>1333</Number>
+      <Street>S Rural Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  
 </Hotel>
