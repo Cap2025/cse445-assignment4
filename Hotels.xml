@@ -50,7 +50,7 @@
     </Address>
   </Hotel>
   
-  <Hotel Rating="4.5">
+  <Hotel> <!-- FIX: Proving Rating is optional by omitting it -->
     <Name>The Camby, Autograph Collection</Name>
     <Phone>(602) 468-0700</Phone>
     <Address NearestAirport="PHX">
@@ -66,7 +66,7 @@
   <Hotel Rating="4.6">
     <Name>The Westin Tempe</Name>
     <Phone>(480) 968-8885</Phone>
-    <Phone>(800) 937-8461</Phone> <!-- Added to satisfy multiple phone requirement -->
+    <Phone>(800) 937-8461</Phone>
     <Address NearestAirport="PHX">
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -91,8 +91,8 @@
   <Hotel Rating="4.6">
     <Name>The Graduate Tempe</Name>
     <Phone>(480) 967-9431</Phone>
-    <!-- Optional attribute 'NearestAirport' is omitted here -->
-    <Address>
+    <!-- FIX: Adding the required NearestAirport attribute -->
+    <Address NearestAirport="PHX">
       <Number>225</Number>
       <Street>E Apache Blvd</Street>
       <City>Tempe</City>
@@ -116,9 +116,9 @@
   <Hotel Rating="4.5">
     <Name>AC Hotel by Marriott Phoenix Tempe/Downtown</Name>
     <Phone>(480) 642-6140</Phone>
-    <!-- Optional attribute 'NearestAirport' is omitted here -->
-    <Address>
-      <Number>100</_Number>
+    <!-- FIX: Fixing the typo and adding the required NearestAirport attribute -->
+    <Address NearestAirport="PHX">
+      <Number>100</Number>
       <Street>E Rio Salado Pkwy</Street>
       <City>Tempe</City>
       <State>AZ</State>
