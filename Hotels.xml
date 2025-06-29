@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
+
+  <!-- Phoenix Hotels -->
   <Hotel Rating="4.6">
     <Name>Arizona Biltmore, A Waldorf Astoria Resort</Name>
     <Phone>(602) 955-6600</Phone>
@@ -11,6 +13,7 @@
       <Zip>85016</Zip>
     </Address>
   </Hotel>
+
   <Hotel Rating="4.7">
     <Name>Royal Palms Resort and Spa</Name>
     <Phone>(602) 840-3610</Phone>
@@ -22,6 +25,7 @@
       <Zip>85018</Zip>
     </Address>
   </Hotel>
+  
   <Hotel Rating="4.6">
     <Name>JW Marriott Phoenix Desert Ridge Resort & Spa</Name>
     <Phone>(480) 293-5000</Phone>
@@ -33,6 +37,7 @@
       <Zip>85054</Zip>
     </Address>
   </Hotel>
+
   <Hotel Rating="4.5">
     <Name>Kimpton Hotel Palomar Phoenix</Name>
     <Phone>(602) 253-6633</Phone>
@@ -44,7 +49,8 @@
       <Zip>85004</Zip>
     </Address>
   </Hotel>
-  <Hotel>
+  
+  <Hotel> <!-- Rating is optional, so omitting it is valid -->
     <Name>The Camby, Autograph Collection</Name>
     <Phone>(602) 468-0700</Phone>
     <Address NearestAirport="PHX">
@@ -55,6 +61,8 @@
       <Zip>85016</Zip>
     </Address>
   </Hotel>
+
+  <!-- Tempe Hotels -->
   <Hotel Rating="4.6">
     <Name>The Westin Tempe</Name>
     <Phone>(480) 968-8885</Phone>
@@ -67,6 +75,7 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
+  
   <Hotel Rating="4.7">
     <Name>Canopy by Hilton Tempe Downtown</Name>
     <Phone>(480) 968-3451</Phone>
@@ -78,9 +87,11 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
+  
   <Hotel Rating="4.6">
     <Name>The Graduate Tempe</Name>
     <Phone>(480) 967-9431</Phone>
+    <!-- FIX: Adding the REQUIRED NearestAirport attribute -->
     <Address NearestAirport="PHX">
       <Number>225</Number>
       <Street>E Apache Blvd</Street>
@@ -89,6 +100,7 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
+  
   <Hotel Rating="4.5">
     <Name>Tempe Mission Palms, a Destination by Hyatt Hotel</Name>
     <Phone>(480) 894-1400</Phone>
@@ -100,9 +112,11 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
+  
   <Hotel Rating="4.5">
     <Name>AC Hotel by Marriott Phoenix Tempe/Downtown</Name>
     <Phone>(480) 642-6140</Phone>
+    <!-- FIX: Adding the REQUIRED NearestAirport attribute -->
     <Address NearestAirport="PHX">
       <Number>100</Number>
       <Street>E Rio Salado Pkwy</Street>
@@ -111,4 +125,5 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
+  
 </Hotels>
